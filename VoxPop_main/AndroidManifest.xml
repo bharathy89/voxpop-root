@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hackathon.voxpop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.hackathon.voxpop.VoxPopApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+
+        <!--
+        <activity
+            android:name="com.hackathon.voxpop.activities.MainActivity"
+            android:label="VoxPop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.hackathon.voxpop.activity.SplashScreen"
+            android:label="VoxPop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hackathon.voxpop.activity.LoginActivity"
+            android:label="Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hackathon.voxpop.activity.PostListActivity"
+            android:label="@string/title_activity_post_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hackathon.voxpop.activity.ForumActivity"
+            android:label="@string/title_activity_forum"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hackathon.voxpop.activity.JobsActivity"
+            android:label="@string/title_activity_jobs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hackathon.voxpop.activity.EyeActivity"
+            android:label="@string/title_activity_eye"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hackathon.voxpop.activity.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hackathon.voxpop.activity.SignUpActivity"
+            android:label="@string/title_activity_sign_up" 
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
