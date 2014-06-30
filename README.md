@@ -8,4 +8,6 @@ and others can volunteer if they want to or track the status of the
 work. 
 
 
-This app was made as part of a hackathon
+This app was made as part of war of the worlds hackathon. I was a part of 
+5 member team and I wrote the android app for this project. We were given 
+an honourable mention.
